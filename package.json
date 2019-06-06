@@ -1,0 +1,12 @@
+{
+  "name": "multiLoom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vinhyenvodoi98/Multinode_Loom.git",
+  "author": "hoang <vinhyenvodoi98@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "loom-truffle-provider": "^0.13.0",
+    "truffle": "^5.0.21"
+  }
+}
