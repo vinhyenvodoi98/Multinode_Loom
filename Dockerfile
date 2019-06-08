@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 ####################################################################################################################
 # Ubuntu Packages
-RUN apt-get update && apt-get install -y curl unzip make git && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl vim wget unzip make git && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ####################################################################################################################
 # Installation
@@ -10,7 +10,8 @@ ENV LOOM_VERSION=build-330
 
 RUN mkdir /loom && \
 	cd /loom && \
-	curl https://raw.githubusercontent.com/loomnetwork/loom-sdk-documentation/master/scripts/get_loom.sh | sh
+	wget https://private.delegatecall.com/loom/linux/build-208/loom && \
+	chmod +x loom
 
 ####################################################################################################################
 # Copy scripts and set permissions
